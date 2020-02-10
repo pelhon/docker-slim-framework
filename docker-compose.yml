@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  slim-framework:
+    image: slim-framework
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html
